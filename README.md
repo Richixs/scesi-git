@@ -1,11 +1,17 @@
 # Git y GitHub :octocat: Richixs <sub>SCESI-2025</sub>
+
 Este documento Markdown es parte de una de las prácticas de la postulación para la **SCESI-2025**, donde encontrarás cómo usar **Git** y **GitHub**, desde los primeros comandos hasta conceptos un poco más complejos. También está enfocado para servirte de guía para aprender o recordar cómo utilizar Git y GitHub. ¡Espero que te sirva! :shipit:
 
 ### Tabla de Contenidos
+
 1. [¿Qué es Git?](#qué-es-git)
 2. [Instalación de Git](#instalación-de-git)
     - [Windows](#windows)
     - [Linux :penguin:](#linux)
+3. [Primeros pasos con Git](#primeros-pasos-con-git)
+    - [Configuración inicial](#configuración-inicial)
+    - [Crear un repositorio](#crear-un-repositorio)
+    - [Comandos básicos](#comandos-básicos)
 
 ## ¿Qué es Git?
 
@@ -44,6 +50,7 @@ Para comenzar a usar Git, primero necesitas instalarlo en tu sistema. A continua
    ```bash
    git --version
    ```
+
     Esto debería mostrar la versión instalada de Git si todo salió bien.
 
 ### Linux
@@ -52,6 +59,7 @@ Para comenzar a usar Git, primero necesitas instalarlo en tu sistema. A continua
 > El comando para instalar Git puede variar según la distribución de Linux que uses, ya que cada una tiene su propio gestor de paquetes.
 
 Aquí un ejemplo usando **Arch Linux**:
+
 ``` bash
 sudo pacman -S git
 ```
@@ -71,4 +79,77 @@ Después de instalar, puedes confirmar que Git está funcionando correctamente c
 ``` bash
 git --version
 ```
+
 Esto debería mostrar la versión instalada de Git si todo salió bien.
+
+## Primeros pasos con Git
+
+Una vez que tengas Git instalado, es hora de comenzar a usarlo. Estos son los primeros pasos que deberías seguir para preparar tu entorno y empezar a trabajar con repositorios.
+
+### Configuración inicial
+
+Antes de empezar a usar Git, necesitas configurar tu nombre y correo electrónico. Estos datos se usarán para identificar los cambios que hagas en tus proyectos.
+
+``` bash
+git config --global user.name "Tu Nombre"
+git config --global user.user "UserName"
+git config --global user.email "tuemail@ejemplo.com"
+```
+
+Puedes verificar que se guardaron correctamente con:
+
+``` bash
+git config --list
+```
+
+Esto mostrará tu configuración actual.
+
+## Crear un repositorio
+
+Un repositorio es donde Git guarda todo el historial de tu proyecto.
+
+### Para iniciar un nuevo repositorio:
+
+1. Crea una carpeta para tu proyecto (si no la tienes):
+    ``` bash
+    mkdir miproyecto
+    cd miproyecto
+    ```
+2. Inicializa el repositorio:
+    ``` bash
+    git init
+    ```
+Esto crea una carpeta oculta llamada `.git` donde se almacenará toda la información de control de versiones.
+
+## Comandos básicos
+
+A continuación, algunos comandos esenciales para comenzar:
+
+- **Ver el stado de tu repositorio:**
+    ``` bash
+    git status
+    ```
+    
+- **Agregar archivos al área de preparación (staging):**
+    ``` bash
+    git add archivo.txt
+    # o para agregar todos los archivos
+    git add .
+    ```
+
+- **Guardar los cambios con un commit:**
+    ``` bash
+    git commit -m "Mensaje descriptivo del cambio"
+    ```
+
+- **Ver el historial de commits**
+    ``` bash
+    git log
+    ```
+
+- **Ver los cambios antes de hacer commit:**
+    ``` bash
+    git diff
+    ```
+
+Con estos comandos ya puedes comenzar a trabajar con control de versiones en tu proyecto local.
