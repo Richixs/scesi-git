@@ -1,4 +1,4 @@
-# Git y GitHub :octocat: | Richixs <sub>SCESI-2025</sub>
+# Git y GitHub :octocat: Richixs <sub>SCESI-2025</sub>
 Este documento Markdown es parte de una de las prácticas de la postulación para la **SCESI-2025**, donde encontrarás cómo usar **Git** y **GitHub**, desde los primeros comandos hasta conceptos un poco más complejos. También está enfocado para servirte de guía para aprender o recordar cómo utilizar Git y GitHub. ¡Espero que te sirva! :shipit:
 
 ### Tabla de Contenidos
